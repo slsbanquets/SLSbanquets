@@ -133,11 +133,11 @@ export default function Navbar() {
         {/* Logo + Name */}
         <Link href="/" className="flex items-center space-x-2" aria-label="SLS Banquets Home">
           <Image
-            src="/logo7.png"
-            alt="SLS Banquets Hall - Mini Function Hall in [Your City]"
+            src="/logo.jpg"
+            alt="SLS Banquets Hall logo"
             width={40}
             height={40}
-            className="rounded"
+            className="rounded-full"
             priority
           />
           <span className="text-xl font-bold text-white">SLS Banquets</span>

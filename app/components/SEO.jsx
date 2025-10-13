@@ -44,6 +44,10 @@ import Head from "next/head";
 export default function SEO() {
   return (
     <Head>
+      <meta
+        name="keywords"
+        content="SLS Banquets Hall Vijayawada, Mini Function Hall in Vijayawada, Mini banquet hall for 100 guests Vijayawada, Small Banquet Hall for Parties, Naming Ceremony Hall Vijayawada, Affordable Function Hall in Vijayawada, Anniversary Party Hall Vijayawada, AC Mini Hall for Events, Engagement Halls in Vijayawada, Birthday Party Halls Vijayawada, Event Venues in Vijayawada, Marriage Halls in Vijayawada, Engagement and Reception Halls, Marriage Hall in Vijayawada, Corporate Event Hall, Family Function Venue Vijayawada, Best Mini Hall near singhinagar, Event Venue with Catering & Decoration, Budget Banquet Hall Vijayawada, Private Party Hall in Vijayawada, Budget-friendly function hall Vijayawada"
+      />
       {/* Open Graph */}
       <meta property="og:title" content="SLS Banquets | Mini Function Hall in Vijayawada" />
       <meta
@@ -51,7 +55,7 @@ export default function SEO() {
         content="Celebrate your events at SLS Banquets, the premium mini function hall in Kandrika, Vijayawada."
       />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="/logo7.png" />
+      <meta property="og:image" content="/heroimg1.jpg" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -60,7 +64,7 @@ export default function SEO() {
         name="twitter:description"
         content="Celebrate your events at SLS Banquets, the premium mini function hall in Kandrika, Vijayawada."
       />
-      <meta name="twitter:image" content="/logo7.png" />
+      <meta name="twitter:image" content="/heroimg1.jpg" />
 
       {/* JSON-LD LocalBusiness */}
       <script
@@ -70,7 +74,7 @@ export default function SEO() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "SLS Banquets",
-            image: "https://sls-banquets.vercel.app/logo7.png",
+            image: "https://sls-banquets.vercel.app/heroimg1.jpg",
             "@id": "https://sls-banquets.vercel.app",
             url: "https://sls-banquets.vercel.app",
             telephone: "+917672024124",

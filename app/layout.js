@@ -28,6 +28,8 @@
 //   );
 // }
 
+
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -35,11 +37,78 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata = {
-  title: "SLS Banquets | Mini Function Hall in Vijayawada",
+  metadataBase: new URL("https://sls-banquets.vercel.app"),
+  title: {
+    default: "SLS Banquets | Mini Function Hall in Vijayawada",
+    template: "%s | SLS Banquets",
+  },
   description:
     "SLS Banquets is the premium mini function hall in Kandrika, Vijayawada. Perfect for weddings, receptions, birthdays, cultural programs, and corporate events.",
-  keywords:
-    "function hall in Vijayawada, banquet hall Kandrika, wedding hall Vijayawada, birthday party hall, cultural events, SLS Banquets",
+  keywords: [
+    "SLS Banquets Hall Vijayawada",
+    "Mini Function Hall in Vijayawada",
+    "Mini banquet hall for 100 guests Vijayawada",
+    "Small Banquet Hall for Parties",
+    "Naming Ceremony Hall Vijayawada",
+    "Affordable Function Hall in Vijayawada",
+    "Anniversary Party Hall Vijayawada",
+    "AC Mini Hall for Events",
+    "Engagement Halls in Vijayawada",
+    "Birthday Party Halls Vijayawada",
+    "Event Venues in Vijayawada",
+    "Marriage Halls in Vijayawada",
+    "Engagement and Reception Halls",
+    "Marriage Hall in Vijayawada",
+    "Corporate Event Hall",
+    "Family Function Venue Vijayawada",
+    "Best Mini Hall near singhinagar",
+    "Event Venue with Catering & Decoration",
+    "Budget Banquet Hall Vijayawada",
+    "Private Party Hall in Vijayawada",
+    "Budget-friendly function hall Vijayawada",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: "SLS Banquets | Mini Function Hall in Vijayawada",
+    description:
+      "Celebrate your events at SLS Banquets, the premium mini function hall in Kandrika, Vijayawada.",
+    siteName: "SLS Banquets",
+    images: [
+      {
+        url: "/heroimg1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SLS Banquets Hall in Vijayawada",
+      },
+    ],
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SLS Banquets | Mini Function Hall in Vijayawada",
+    description:
+      "Celebrate your events at SLS Banquets, the premium mini function hall in Kandrika, Vijayawada.",
+    images: ["/heroimg1.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  category: "events",
 };
 
 export default function RootLayout({ children }) {

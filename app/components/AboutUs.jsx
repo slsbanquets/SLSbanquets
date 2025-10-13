@@ -677,7 +677,7 @@ export default function AboutUs() {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-[#FFD447] to-[#FF6F61] shadow-lg mb-6">
               <SparklesIcon className="w-8 h-8 text-white" aria-hidden="true" />
             </div>
-            <h1
+            <h2
               id="about-heading"
               className="text-5xl md:text-6xl font-light mb-6"
             >
@@ -685,7 +685,7 @@ export default function AboutUs() {
               <span className="font-bold bg-gradient-to-r from-[#FFD447] via-[#FF6F61] to-[#3498DB] bg-clip-text text-transparent">
                 SLS Banquets
               </span>
-            </h1>
+            </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Welcome to <strong>SLS Banquets</strong>, the{" "}
               <strong>best function hall in Kandrika, Vijayawada</strong>. Our
