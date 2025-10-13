@@ -127,7 +127,7 @@ import Head from "next/head";
 export default function HeroSection() {
   const images = [
     { src: "/heroimg.jpg", alt: "SLS Banquets Hall exterior" },
-    { src: "/heroimg3.jpg", alt: "Elegant wedding setup at SLS Banquets" },
+    { src: "/heroimg1.jpg", alt: "Elegant wedding setup at SLS Banquets" },
     { src: "/heroimg2.jpg", alt: "Birthday party setup in banquet hall" },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -119,25 +119,16 @@
 
 "use client";
 import Head from "next/head";
+import Image from "next/image";
 import { useState, useEffect } from "react";
+import { galleryImages } from "../data/galleryImages";
 
 export default function Gallery() {
   const [showAll, setShowAll] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [itemsToShow, setItemsToShow] = useState(4);
 
-  const images = [
-    { src: "/heroimg1.jpg", alt: "Banquet Hall in Kandrika Vijayawada" },
-    { src: "/galleryimg2.jpg", alt: "Wedding and Reception Stage Decoration" },
-    { src: "/galleryimg3.jpg", alt: "Marriage Hall Lighting and Floral Setup" },
-    { src: "/heroimg2.jpg", alt: "Birthday Party Hall with Elegant Lighting" },
-    { src: "/galleryimg1.jpg", alt: "South Indian Wedding Stage at SLS Banquets" },
-    { src: "/galleryimg4.jpg", alt: "Reception Hall Seating Arrangement" },
-    { src: "/heroimg1.jpg", alt: "Function Hall Setup for Private Events" },
-    { src: "/galleryimg5.jpg", alt: "Cultural Event Venue in Vijayawada" },
-    { src: "/heroimg2.jpg", alt: "Corporate Event and Party Hall Setup" },
-    { src: "/galleryimg4.jpg", alt: "Banquet Hall for Family Gatherings" },
-  ];
+  const images = galleryImages;
 
   // Responsive images to display count
   useEffect(() => {
@@ -226,9 +217,11 @@ export default function Gallery() {
               className="overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group cursor-pointer"
               onClick={() => setSelectedImage(img)}
             >
-              <img
+              <Image
                 src={img.src}
                 alt={img.alt}
+                width={800}
+                height={600}
                 className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
               />
@@ -256,9 +249,11 @@ export default function Gallery() {
             onClick={() => setSelectedImage(null)}
           >
             <div className="relative max-w-4xl w-full">
-              <img
+              <Image
                 src={selectedImage.src}
                 alt={selectedImage.alt}
+                width={1200}
+                height={900}
                 className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
               />
               <button
