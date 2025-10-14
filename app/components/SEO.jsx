@@ -39,41 +39,15 @@
 
 
 "use client";
-import Head from "next/head";
+import Script from "next/script";
 
 export default function SEO() {
   return (
-    <Head>
-      {/* Favicon / Icons */}
-      <link rel="icon" href="/logo.png" type="image/png" sizes="32x32" />
-      <link rel="icon" href="/logo.png" type="image/png" sizes="16x16" />
-      <link rel="shortcut icon" href="/logo.png" />
-      <link rel="apple-touch-icon" href="/logo.png" />
-      <meta
-        name="keywords"
-        content="SLS Banquets Hall Vijayawada, Mini Function Hall in Vijayawada, Mini banquet hall for 100 guests Vijayawada, Small Banquet Hall for Parties, Naming Ceremony Hall Vijayawada, Affordable Function Hall in Vijayawada, Anniversary Party Hall Vijayawada, AC Mini Hall for Events, Engagement Halls in Vijayawada, Birthday Party Halls Vijayawada, Event Venues in Vijayawada, Marriage Halls in Vijayawada, Engagement and Reception Halls, Marriage Hall in Vijayawada, Corporate Event Hall, Family Function Venue Vijayawada, Best Mini Hall near singhinagar, Event Venue with Catering & Decoration, Budget Banquet Hall Vijayawada, Private Party Hall in Vijayawada, Budget-friendly function hall Vijayawada"
-      />
-      {/* Open Graph */}
-      <meta property="og:title" content="SLS Banquets | Mini Function Hall in Vijayawada" />
-      <meta
-        property="og:description"
-        content="Celebrate your events at SLS Banquets, the premium mini function hall in Kandrika, Vijayawada."
-      />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content="/heroimg1.jpg" />
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="SLS Banquets | Mini Function Hall in Vijayawada" />
-      <meta
-        name="twitter:description"
-        content="Celebrate your events at SLS Banquets, the premium mini function hall in Kandrika, Vijayawada."
-      />
-      <meta name="twitter:image" content="/heroimg1.jpg" />
-
-      {/* JSON-LD LocalBusiness */}
-      <script
+    <>
+      <Script
+        id="ld-local-business"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -112,10 +86,10 @@ export default function SEO() {
           }),
         }}
       />
-
-      {/* JSON-LD FAQ to capture long-tail queries */}
-      <script
+      <Script
+        id="ld-faq"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -149,6 +123,6 @@ export default function SEO() {
           }),
         }}
       />
-    </Head>
+    </>
   );
 }
