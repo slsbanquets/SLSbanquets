@@ -283,7 +283,7 @@ export default function Contact() {
           <div>
             <iframe
               className="w-full h-80 rounded-2xl shadow-lg border-4 border-[#FFD447]/40 transition-transform duration-500 hover:scale-[1.02]"
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3500.740266422479!2d80.65041767514634!3d16.555262984196933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDMzJzE5LjAiTiA4MMKwMzknMTAuOCJF!5e1!3m2!1sen!2sin!4v1758260726913!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d737.5981361933733!2d80.65293993895956!3d16.555077796670385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35e52e0d787a73%3A0x75bc12acf7137c22!2sSLS%20BANQUETS!5e1!3m2!1sen!2sin!4v1760415921297!5m2!1sen!2sin"
               loading="lazy"
               allowFullScreen
               title="SLS Banquets Location Map"
