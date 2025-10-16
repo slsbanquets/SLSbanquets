@@ -51,12 +51,25 @@ export default function SEO() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
+            "@type": ["LocalBusiness", "EventVenue"],
             name: "SLS Banquets",
-            image: "https://sls-banquets.vercel.app/heroimg1.jpg",
+            image: [
+              "https://sls-banquets.vercel.app/heroimg1.jpg",
+              "https://sls-banquets.vercel.app/heroimg2.jpg",
+              "https://sls-banquets.vercel.app/heroimg3.jpg",
+              "https://sls-banquets.vercel.app/galleryimg1.jpg",
+              "https://sls-banquets.vercel.app/galleryimg2.jpg",
+              "https://sls-banquets.vercel.app/galleryimg3.jpg",
+              "https://sls-banquets.vercel.app/galleryimg4.jpg",
+              "https://sls-banquets.vercel.app/galleryimg5.jpg"
+            ],
             "@id": "https://sls-banquets.vercel.app",
             url: "https://sls-banquets.vercel.app",
             telephone: "+917672024124",
+            alternateName: ["SLS Banquets", "SLSBanquets"],
+            priceRange: "₹₹",
+            paymentAccepted: ["Cash", "UPI", "Credit Card", "Debit Card"],
+            areaServed: { "@type": "AdministrativeArea", name: "Vijayawada" },
             address: {
               "@type": "PostalAddress",
               streetAddress:
@@ -67,6 +80,14 @@ export default function SEO() {
               addressCountry: "IN",
             },
             geo: { "@type": "GeoCoordinates", latitude: 16.555263, longitude: 80.650418 },
+            hasMap: "https://www.google.com/maps?q=16.555263,80.650418(SLS+Banquets)",
+            maximumAttendeeCapacity: 100,
+            amenityFeature: [
+              { "@type": "LocationFeatureSpecification", name: "Air Conditioning", value: true },
+              { "@type": "LocationFeatureSpecification", name: "Parking Available", value: true },
+              { "@type": "LocationFeatureSpecification", name: "Power Backup", value: true },
+              { "@type": "LocationFeatureSpecification", name: "Stage & Lighting", value: true }
+            ],
             openingHoursSpecification: [
               {
                 "@type": "OpeningHoursSpecification",

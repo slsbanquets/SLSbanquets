@@ -45,6 +45,8 @@ export const metadata = {
   description:
     "SLS Banquets is the premium mini function hall in Kandrika, Vijayawada. Perfect for weddings, receptions, birthdays, cultural programs, and corporate events.",
   keywords: [
+    "SLS Banquets",
+    "SLSBanquets",
     "SLS Banquets Hall Vijayawada",
     "Mini Function Hall in Vijayawada",
     "Mini banquet hall for 100 guests Vijayawada",
