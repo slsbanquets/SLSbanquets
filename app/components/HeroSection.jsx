@@ -238,38 +238,21 @@ export default function HeroSection() {
             Let every event be an experience — a memory you and your guests will cherish forever at SLS Banquets Hall.
           </p>
 
-          {/* CTA Buttons
-          <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-            <a
-              href="#contact"
-              aria-label="Book your event at SLS Banquets"
-              className="px-4 sm:px-8 py-2 sm:py-4 bg-gradient-to-r from-[#FFD447] to-[#FF6F61] text-black font-semibold text-sm sm:text-lg rounded-full transition-transform duration-300 hover:scale-105"
-            >
-              Book Your Event
-            </a>
-            <a
-              href="#gallery"
-              aria-label="View SLS Banquets gallery"
-              className="px-4 sm:px-8 py-2 sm:py-4 border-2 border-white/60 text-white font-semibold text-sm sm:text-lg rounded-full transition-colors duration-300 hover:bg-white/10 hover:border-[#FFD447] hover:text-[#FFD447]"
-            >
-              View Gallery
-            </a>
-          </div>
-        </div> */}
-
-        {/* CTA Buttons */}
-<div className="flex flex-row flex-wrap sm:flex-row gap-2 w-full justify-center">
+{/* CTA Buttons */}
+<div className="flex flex-row flex-wrap sm:flex-row gap-3 w-full justify-center">
   <a
     href="#contact"
     aria-label="Book your event at SLS Banquets"
-    className="flex-1 min-w-[130px] text-center px-3 py-2 sm:px-8 sm:py-4 bg-gradient-to-r from-[#FFD447] to-[#FF6F61] text-black font-semibold text-sm sm:text-lg rounded-full transition-transform duration-300 hover:scale-105"
+    className="flex-1 min-w-[130px] text-center px-3 py-2 text-sm bg-gradient-to-r from-[#FFD447] to-[#FF6F61] text-black font-semibold rounded-full transition-transform duration-300 hover:scale-105
+               sm:flex-none sm:px-8 sm:py-4 sm:text-lg"
   >
     Book Your Event
   </a>
   <a
     href="#gallery"
     aria-label="View SLS Banquets gallery"
-    className="flex-1 min-w-[130px] text-center px-3 py-2 sm:px-8 sm:py-4 border-2 border-white/60 text-white font-semibold text-sm sm:text-lg rounded-full transition-colors duration-300 hover:bg-white/10 hover:border-[#FFD447] hover:text-[#FFD447]"
+    className="flex-1 min-w-[130px] text-center px-3 py-2 text-sm border-2 border-white/60 text-white font-semibold rounded-full transition-colors duration-300 hover:bg-white/10 hover:border-[#FFD447] hover:text-[#FFD447]
+               sm:flex-none sm:px-8 sm:py-4 sm:text-lg"
   >
     View Gallery
   </a>
