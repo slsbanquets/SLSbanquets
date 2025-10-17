@@ -376,7 +376,7 @@ export default function Facilities() {
       icon: <TruckIcon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />,
       title: "Limited Parking",
       description:
-        "Dedicated parking area with easy access for guests’ convenience and safety.",
+        "Dedicated parking area with easy access for guest's convenience and safety.",
       solidColor: "#3498DB",
     },
     {
@@ -390,7 +390,7 @@ export default function Facilities() {
       icon: <LightBulbIcon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />,
       title: "Extra Room Facilities",
       description:
-        "Comfortable extra rooms for guests or family members. Ideal for pre-event preparations, relaxation, or overnight stays.",
+        "Comfortable rooms for guests—ideal for prep or overnight stays.",
       gradient: "from-[#FFD447] to-[#3498DB]",
     },
     {
