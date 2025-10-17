@@ -145,6 +145,7 @@ export default function HeroSection() {
         <title>
           SLS Banquets Hall – Mini Function Hall in Vijayawada | Weddings, Parties & Corporate Events
         </title>
+        
         <meta
           name="description"
           content="Book SLS Banquets Hall, a premium mini function hall in Vijayawada for weddings, receptions, birthday parties, and corporate events. Elegant decor, catering & full amenities."
